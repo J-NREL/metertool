@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 
     // Lots of global variables. Use carefully...
-    var ICchart, ICPchart, Voltagechart, Leachingchart,
+    var testchart, ICchart, ICPchart, Voltagechart, Leachingchart,
         chart1,
         chart2;
 
@@ -38,6 +38,17 @@ $(document).ready(function() {
         , italic: false
     };
 
+	
+	//<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>check
+	//<script type="text/javascript">
+	//google.charts.load('current', {'packages':['corechart']});
+	//google.charts.setOnLoadCallback(drawChart); check
+	
+	
+	
+	
+	
+	
 
     google.load("visualization", "1", { packages:"corechart", callback: main });
 
@@ -45,11 +56,13 @@ $(document).ready(function() {
 
     chart1 = new google.visualization.ScatterChart(document.getElementById('chart_div1'));
     chart2 = new google.visualization.ScatterChart(document.getElementById('chart_div2'));
+	testchart = new google.visualization.LineChart(document.getElementById('chart_test'));
 
     var ic       = $('#chart-ic').get(0);
     var icp      = $('#chart-icp').get(0);
     var voltage  = $('#chart-voltage').get(0);
     var leaching = $('#chart-leaching').get(0);
+	
 
     ICchart       = new google.visualization.ColumnChart( ic );
     ICPchart      = new google.visualization.ColumnChart( icp );
@@ -240,6 +253,7 @@ $(document).ready(function() {
 
             drawChart1();
             drawChart2();
+			drawTestChart();
             addTable();
 
             drawICchart();
@@ -329,7 +343,48 @@ $(document).ready(function() {
 
         };
 
+		/* draw test chart
+		* Box interval graph
+		*
+		*/
+		
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
 
+		function drawTestChart() {
+			var data = new google.visualization.DataTable();
+			data.addColumn('number', 'x');
+			data.addColumn('number', 'values');
+			data.addColumn({id:'i0', type:'number', role:'interval'});
+			data.addColumn({id:'i1', type:'number', role:'interval'});
+			data.addColumn({id:'i2', type:'number', role:'interval'});
+			data.addColumn({id:'i2', type:'number', role:'interval'});
+			data.addColumn({id:'i2', type:'number', role:'interval'});
+			data.addColumn({id:'i2', type:'number', role:'interval'});
+  
+			data.addRows([
+				[1, 100, 90, 110, 85, 96, 104, 120],
+				[2, 120, 95, 130, 90, 113, 124, 140],
+				[3, 130, 105, 140, 100, 117, 133, 139],
+				[4, 90, 85, 95, 85, 88, 92, 95],
+				[5, 70, 74, 63, 67, 69, 70, 72],
+				[6, 30, 39, 22, 21, 28, 34, 40],
+				[7, 80, 77, 83, 70, 77, 85, 90],
+				[8, 100, 90, 110, 85, 95, 102, 110]]);
+  
+			// The intervals data as narrow lines (useful for showing raw source data)
+			var options_bars = {
+				title: 'Line intervals, default',
+				curveType: 'function',
+				lineWidth: 4,
+				intervals: { 'style':'boxes' },
+				legend: 'none'
+			};
+			testchart.draw(dataTable, options);
+        };
+		
 
         /*
          *
@@ -346,7 +401,7 @@ $(document).ready(function() {
             var a;
             var data = [];
             var dataTable;
-
+			/* retrieving the data for the chart */
             data[0] = ['TOC(ppm)', 'Materials in this Class'];
 
             for ( a = startIndex; a <= endIndex; a++) {
