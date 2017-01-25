@@ -9,7 +9,7 @@
 <!--PRINTABLE VERSION SET UP END -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>NREL:      Hydrogen and Fuel Cells Research - Fuel Cell System Contaminants Material Screening Data</title>
+<title>NREL:      Hydrogen and Fuel Cells Research - Meter Tool</title>
 
 <!-- Search engine code -->
 
@@ -161,7 +161,8 @@
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script type="text/javascript" src="http://www.google.com/uds/?file=visualization&v=1&packages=corechart"></script>
 <script type="text/javascript" src="http://www.google.com/uds/api/visualization/1.0/4086f2e8fc632adc52e6d6795a5637a4/format+en,default,corechart.I.js"></script>
-
+<!--potential home for interval the script-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="http://www.nrel.gov/hydrogen/system_contaminants_data/includes/js/jquery.scrolltofixed.js" type="text/javascript"></script>
 
 
@@ -817,7 +818,7 @@
 
 <h1>Meter Tool</h1>
 
-<p>NREL designed this interactive meter tool</p>
+<p>NREL meter tool select between differnt types of meters with different flow, ramp, pressure, position.</p>
 
 <p>This tool is in development and NREL will add materials and results over time.</p>
 
@@ -893,15 +894,15 @@
 <!-- GRAPHS -->
 <table class="data graphs">
 <tbody>
- <tr>
+<tr>
   <td>
-    <h2>Top graph will insert a graph to conquer this</h2>
-  <!--  <div id="chart_div1" style="position: relative;"></div>-->
+    <h2>Top graph</h2>
+	<div id="chart_test" style="position: relative;"></div>
     <div class="hide">
       <p>Graph on top explanation</p>
     </div>
   </td>
-</tr> 
+</tr>
 <tr>
   <td>
     <h2>STE</h2>
@@ -1144,4 +1145,3 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </div>
 </body>
 </html>
-
