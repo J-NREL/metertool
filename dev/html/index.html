@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+
+
+
+
+<!--PRINTABLE VERSION SET UP START -->
+
+
+<!--PRINTABLE VERSION SET UP END -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>NREL:      Hydrogen and Fuel Cells Research - Fuel Cell System Contaminants Material Screening Data</title>
+
+<!-- Search engine code -->
+
+<meta http-equiv="last-modified" content="2014-06-16@10:40:48 MDT" />
+
+<!--CHARACTER ENCODING -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--Force IE to render with latest engine-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<!--Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+<!-- iOS icons -->
+<link rel="apple-touch-icon" 					href="http://www.nrel.gov/images/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" 		href="http://www.nrel.gov/images/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114"	href="http://www.nrel.gov/images/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="144x144"	href="http://www.nrel.gov/images/touch-icon-ipad-retina.png" />
+
+<!--MAIN NREL STYLESHEET -->
+<link rel="stylesheet" type="text/css" href="http://www.nrel.gov/includes/nrel.css" />
+
+
+<!-- GLOBAL SCRIPTS -->
+
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+
+
+<!-- Redesign banner styles and code -->
+
+<!-- Retrofits for the upgrade -->
+<link href="http://www.nrel.gov/includes/nrel.redesign.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700%7CRoboto:300,400,700" rel="stylesheet" type="text/css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://www.nrel.gov/client/css/nrel.banner.css" rel="stylesheet" type="text/css" />
+
+
+<!-- Bootstrap (for dropdown menu)-->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- End redesign -->
+
+
+
+  <!-- Custom scripts -->
+  <!-- <script src="/includes/js/nrel.icons.jquery.js" type="text/javascript"></script> -->
+  <script src="http://www.nrel.gov/includes/js/iconomatic/jquery.iconomatic.js" type="text/javascript" ></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+        $('body').iconomatic({
+             ajax       :  true
+            ,dataMode   :  true
+        });
+    });
+  </script>
+  <script src="http://www.nrel.gov/includes/js/nrel.aria.jquery.js"  type="text/javascript"></script>
+
+  <!-- jQuery UI -->
+  <script src="http://www.nrel.gov/includes/js/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+  <link  href="http://www.nrel.gov/includes/js/jquery-ui-1.10.4.custom/css/custom-theme/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css"  />
+
+  <!-- ariaLighbox -->
+  <script src="http://www.nrel.gov/includes/js/lightbox/js/ui.ariaLightbox_min.js" type="text/javascript"></script>
+
+
+<!-- END GLOBAL SCRIPTS -->
+
+
+
+
+<!-- SITE SPECIFIC SCRIPTS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- THIS BREAKS CF -->
+
+
+
+
+
+
+
+<script src="http://www.nrel.gov/includes/js/cycle/jquery.cycle.all.min.js" type="text/javascript"></script> <!-- proj_tech_validation.html -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NEWS must go last! (until decoupled from cfincludes) -->
+
+
+<!-- END SITE SPECIFIC SCRIPTS -->
+
+
+
+<!--GOOGLE ANALYTICS-->
+<script type="text/javascript">
+ (function() {
+ var so = document.createElement('script'); so.type = 'text/javascript'; so.async = true;
+ so.src = 'http://www.nrel.gov/includes/ga/nrel.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(so, s);
+  })();
+</script>
+
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="http://www.google.com/uds/?file=visualization&v=1&packages=corechart"></script>
+<script type="text/javascript" src="http://www.google.com/uds/api/visualization/1.0/4086f2e8fc632adc52e6d6795a5637a4/format+en,default,corechart.I.js"></script>
+
+<script src="http://www.nrel.gov/hydrogen/system_contaminants_data/includes/js/jquery.scrolltofixed.js" type="text/javascript"></script>
+
+
+<script src="http://www.nrel.gov/hydrogen/system_contaminants_data/includes/js/array_functions.js" type="text/javascript"></script>
+<script src="http://www.nrel.gov/hydrogen/system_contaminants_data/includes/js/contam.js?20140616" type="text/javascript"></script>
+<link href="http://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css" rel="stylesheet" type="text/css">
+<link href="http://www.nrel.gov/hydrogen/system_contaminants_data/includes/css/contam.css?20140616" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+<!--EXCLUDE FOR PRINTABLE VERSION TOP START -->
+
+    
+<!-- == GLOBAL BANNER == -->
+<!--stopindex-->
+<a href="#content" class="sr-only">Skip to main content</a>
+
+<header role="banner" id="banner">
+    <div class="banner-logo">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <a href="/"><div class="logo"></div></a>
+                </div>
+
+                <button
+                    type="button"
+                    class="navbar-toggle searchbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#searchbar-collapse">
+
+                    <i class="fa fa-search"></i><span class="sr-only">Toggle Search</span>
+                </button>
+
+                <div class="col-sm-6">
+                    <div class="navbar-collapse collapse" id="searchbar-collapse">
+
+                        <form
+                            role="form"
+                            name="seek"
+                            method="get"
+                            class="searchbar-form form-inline"
+                            action="http://search2.nrel.gov">
+
+                            <input type="hidden" name="ourl" id="bannerourl" onload />
+                            <input type="hidden" name="rows" value="10" />
+
+                            <div class="form-group">
+                                <label for="search" class="sr-only">Search NREL.gov</label>
+                                <input
+                                    type="text"
+                                    name="q" id="search"
+                                    maxlength="2047"
+                                    placeholder="Search NREL.gov"
+                                    class="form-control">
+
+                                <button type="submit" class="btn btn-default">Search</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="banner-wordo">
+        <div class="container">
+            <div class="row visible-xs">
+                <div class="col-sm-12">
+                    <div class="wordo">National Renewable Energy Laboratory</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--startindex-->
+<!-- == END GLOBAL BANNER == -->
+
+
+
+<!-- #if expr="$VAR_topnav!=extranet" -->
+<!-- == TOP NAVIGATION == -->
+<!--stopindex-->
+<div class="navbar-wrapper corporate-topnav" id="topnav">
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <span class="navbar-brand hidden-xs">Leading Clean Energy Innovation</span>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown" data-topnav="about"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="fa fa-angle-down hidden-xs"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/about/">About NREL <i class="fa fa-home"></i></a></li>
+                        <li><a href="/about/mission-programs.html">Mission &amp; Programs</a></li>
+                        <li><a href="/about/leadership.html">Leadership</a></li>
+                        <li><a href="/about/technology-transfer.html">Technology Transfer</a></li>
+                        <li><a href="/news/">Newsroom</a></li>
+                        <li><a href="/about/community.html">Community</a></li>
+                        <li><a href="/about/sustainability.html">Sustainability</a></li>
+                        <li><a href="/about/visiting-nrel.html">Visiting NREL</a></li>
+                        <li><a href="/about/contacts.html">Contact Us</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown" data-topnav="research"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <span class="fa fa-angle-down hidden-xs"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/research/">Research <i class="fa fa-home"></i></a></li>
+                        <li><a href="/research/highlights.html">Highlights</a></li>
+                        <li><a href="/research/publications.html">Publications</a></li>
+                        <li><a href="/research/collaborations.html">Collaborations</a></li>
+                        <li><a href="/innovation/">Impact</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown" data-topnav="workingwithus"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Working With Us <span class="fa fa-angle-down hidden-xs"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/workingwithus/">Working With Us <i class="fa fa-home"></i></a></li>
+                        <li><a href="/workingwithus/partnership-opportunities.html">Partnerships</a></li>
+                        <li><a href="/workingwithus/partnering-facilities.html">Facilities</a></li>
+                        <li><a href="/workingwithus/licensing.html">Licensing</a></li>
+                        <li><a href="/workingwithus/entrepreneurship.html">Entrepreneurship</a></li>
+                        <li><a href="/workingwithus/procurement.html">Procurement</a></li>
+                        <li><a href="/workingwithus/energy-education.html">Energy Education</a> </li>
+                        <li><a href="/workingwithus/success-stories.html">Success Stories</a></li>
+                        <li><a href="/workingwithus/faqs.html">FAQs</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers <span class="fa fa-angle-down hidden-xs"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/careers/">Careers <i class="fa fa-home"></i></a></li>
+                        <li><a href="/careers/find-job.html">Find a Job</a></li>
+                        <li><a href="/careers/your-career.html">Your Career at NREL</a></li>
+                        <li><a href="/careers/interns-post-docs.html">Interns &amp; Postdocs</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+      </div>
+    </div>
+</div>
+<!--startindex-->
+<!-- == END TOP NAVIGATION == -->
+
+<!-- #endif -->
+
+<!--SITE HEADERS & SEARCH -->
+
+<div id="sitehead_search">
+<!--SITE HEADERS -->
+<!--About NREL -->
+
+
+
+<!--Analysis -->
+
+
+<!--Analysis - JEDI -->
+
+
+<!--Analysis - ReEDS - 011212 JIM -->
+
+
+<!--Analysis - BSM - 053014 JIM -->
+
+
+<!--Analysis - REFutures -->
+
+
+<!--Analysis - SEDS - 090914 JIM -->
+
+
+
+
+
+<!--Analysis subsite header image maps - START -->
+
+
+
+
+
+
+
+
+
+
+
+<!--Analysis subsite header image maps - END -->
+
+
+<!--Awards -->
+
+
+<!--Biomass Research -->
+
+
+
+<!--Biomass BESC Characterization Workshop -->
+
+
+
+
+<!--Buildings Research -->
+
+<!--Buildings Research - SUNREL Energy Simulation Software -->
+
+<!--Buildings Research - LCI -->
+
+<!--Buildings Research subsite header image maps - START -->
+
+<!--Buildings Research subsite header image maps - END -->
+
+<!--Business Opportunities -->
+
+
+
+<!--Community - NREL in the Community -->
+
+
+
+<!--Computational Science - CSC -->
+
+
+
+<!--Concentrating Solar Power Research -->
+
+<!--CSP - SolTrace -->
+
+<!--CSP - TroughNet -->
+
+<!--Concentrating Solar Power Research subsite header image maps - START -->
+
+<!--Concentrating Solar Power Research subsite header image maps - END -->
+
+
+<!--Department of Defense Energy Programs-->
+
+
+
+
+<!--Director's Page -->
+
+
+
+<!--Disclaimer -->
+
+
+
+<!--Diversity at NREL -->
+
+
+
+<!--Education -->
+
+
+
+<!--Electricity -->
+
+
+
+<!--Electricity - Distributed Grid Integration -->
+
+
+<!--Electricity - Transmission Grid Integration -->
+
+
+
+<!--Employment -->
+
+
+
+
+
+<!--Energy Executive Leadership Program -->
+
+
+<!--Energy Sciences -->
+
+
+
+
+<!--Energy Systems Integration -->
+
+
+
+<!--Environment, Health, Safety and Quality (EHSQ) -->
+
+
+<!--Error -->
+
+
+<!--Extranet - Alliance Board -->
+
+
+<!--Extranet - Biomass -->
+
+
+<!--Extranet - BPA -->
+
+
+<!--Extranet - Commercial Fleet Data Center (CFDC) -->
+
+
+<!--Extranet - Communications -->
+
+
+<!--Extranet - Contracts -->
+
+
+<!--Extranet - CBS RFP -->
+
+
+<!--Extranet - CBS RFP Storage -->
+
+
+
+
+
+<!--Extranet - DHS  -->
+
+
+
+<!--Extranet - Electricity Integration Research  -->
+
+
+
+<!--Extranet - Environment, Health, and Safety  -->
+
+
+<!--Extranet - ESI Summit -->
+
+
+<!--Extranet - Executive Energy Leadership Academy -->
+
+
+<!--Extranet - Forum and Dialogue -->
+
+
+<!--Extranet - Ideas Summit -->
+
+
+<!--Extranet - International Services -->
+
+
+<!--Extranet - Moniz Visit -->
+
+
+<!--Extranet - NEAC (NREL External Advisory Council) -->
+
+
+<!--Extranet - NGS (Navajo Generation Station Study) -->
+
+
+<!--Extranet - Prime Contract (RM) -->
+
+
+<!--Extranet - Policy & Procedure (RM) -->
+
+
+
+
+<!--Extranet - RSF (Research Support Facilities) -->
+
+
+<!--Extranet - RSF Workshop -->
+
+
+
+
+
+<!--Extranet - SEEDS (Solar Energy Education Distribution System) Jim did this -->
+
+
+
+
+
+<!--Extranet - Solar Communications -->
+
+
+<!--Extranet - NREL.gov Standards and Best Practices -->
+
+
+<!--Extranet - TRP (Technical Review Panels) -->
+
+
+<!--Extranet - UMP (Uniform Method Project) -->
+
+
+
+<!--Extranet - Western Wind and Solar Integration Study Working Site -->
+
+
+<!--Extranet - Wind and Water Power Technologies Office Lab Summit -->
+
+
+
+
+<!--Geothermal Technologies -->
+
+
+
+<!--Geothermal Financing -->
+
+
+
+<!--Geothermal Guidebooks -->
+
+
+
+<!--Geothermal Technologies subsite header image maps - START -->
+
+<!--Geothermal Technologies subsite header image maps - END -->
+
+
+<!--GIS - Dynamic Maps, GIS Data, and Analysis Tools -->
+
+
+
+<!--Hydrogen & Fuel Cells Research -->
+<a href="/hydrogen/"><img src="http://www.nrel.gov/images/site_head_hydrogen.jpg" alt="Hydrogen and Fuel Cells Research" style="border-top:2px solid #fff;" /></a>
+
+
+<!--Innovation Impact -->
+<!-- Inside II site -->
+
+<!--Innovation Spectrum -->
+
+
+
+<!--International -->
+
+
+
+<!--Learning About Renewable Energy -->
+
+
+
+<!--Library -->
+
+
+
+<!--Lost & Found -->
+
+
+
+<!--Multimedia -->
+
+
+
+<!--News -->
+
+
+
+<!--Overview -->
+
+
+<!--Photographic Information eXchange (PIX) -->
+
+
+
+<!--Publications -->
+
+
+
+<!--Photovoltaics Research (PV) -->
+
+
+<!--PV - M&C -->
+
+
+
+<!--PV - PDIL -->
+
+
+
+<!--PV - Performance Reliability -->
+
+
+
+<!--PV - Photovoltaics Research subsite header image maps - START -->
+
+<!--PV - Photovoltaics Research subsite header image maps - END -->
+
+
+<!--Renewable Resource Data Center (RReDC) -->
+
+<!--Renewable Resource Data Center (RReDC) - PVWatts -->
+
+<!--Renewable Resource Data Center (RReDC) - SMARTS -->
+
+<!--RReDC subsite header image maps - START -->
+
+<!--RReDC subsite header image maps - END -->
+
+
+<!--Renewable Resources Maps & Data -->
+
+
+
+<!--Research Facilities -->
+
+
+
+<!--Research Participant Program (RPP) -->
+
+
+
+<!--RSS -->
+
+
+
+<!--Science & Technology -->
+
+
+
+<!--Search Help -->
+
+
+
+<!--Search Options -->
+
+
+
+<!--Security & Privacy Notices -->
+
+
+<!--Site Map -->
+
+
+
+<!--Solar -->
+
+
+
+<!--Solar Radiation Research/Resource Assessment and Forecasting -->
+
+
+<!--Sustainable NREL -->
+
+
+
+<!--Technology Deployment -->
+
+<!--Applying Technologies - Climate Action Planning Tool  -->
+
+<!--Applying Technologies - Climate-Neutral Research Campuses -->
+
+<!--Applying Technologies - State and Local Activities -->
+
+
+<!--Applying Technologies - State and Local Governments -->
+
+
+
+<!--Applying Technologies subsite header image maps - START -->
+
+
+<!--Technology Deployment subsite header image maps - END -->
+
+
+
+<!--Technology Transfer -->
+
+
+<!--Transportation -->
+
+
+<!--Transportation - Energy Storage -->
+
+
+<!--Transportation subsite header image maps - START -->
+
+<!--Transportation subsite header image maps - END -->
+
+
+
+
+<!--used to be Visitors Center now it's Education Center 032013-->
+
+
+
+<!-- Water -->
+
+
+
+
+<!--Webmaster/Need Help? -->
+
+
+<!--Wind Research -->
+
+<!--Wind - Wind Integration Datasets -->
+
+<!--Wind GRC -->
+
+<!--Wind - Wind Systems Integration -->
+
+
+<!--Wind Systems Engineering -->
+
+
+<!--Wind Research subsite header image maps - START -->
+
+<!--Wind Research subsite header image maps - END -->
+
+
+<!--GENERIC -->
+
+
+
+
+<!--SEARCH -->
+
+<!-- #include virtual="/includes/search.html" -->
+
+
+
+<br id="navend" clear="all" />
+</div>
+
+
+<!--startindex-->
+
+        <!--CONTENT START -->
+        <div id="content-nonav">
+            <!--CENTER COLUMN START -->
+            <!--<div id="column-center"> -->
+                <div id="printable-top"><!--stopindex-->
+
+<img src="http://www.nrel.gov/images/icon_print.gif" width="14" height="10" alt="" /> <a href="http://www.nrel.gov/hydrogen/system_contaminants_data/index.html?print">Printable Version</a>
+
+<!--startindex--></div>
+<!--EXCLUDE FOR PRINTABLE VERSION TOP END -->
+
+
+<!--BEGIN EDIT (do NOT change anything ABOVE this line) -->
+
+
+
+<h1>Meter Tool</h1>
+
+<p>NREL designed this interactive meter selector tool to...<a href="/hydrogen/contaminants.html">contaminants studies</a>, which were performed in collaboration with General Motors, the University of South Carolina, and the Colorado School of Mines.  Select from the drop-down lists of materials to see the screening data collected from multiple methods. You can also view the <a href="/hydrogen/system_contaminants_data/data.html">data tables</a>. The screening techniques include leaching tests (90°C, 1 or 6 weeks, 150 mm<sup>2</sup>/mL) to extract water-based contaminants; solution conductivity; pH; total organic carbon (TOC); cyclic voltammetry (CV); membrane conductivity; in-situ 50 cm<sup>2</sup> fuel cell test; and advanced analytical characterization [gas and liquid chromatography mass spectrometry (GCMS, LCMS), inductively coupled plasma–optical emission spectroscopy (ICP-OES), and ion chromatography (IC)].</p>
+
+<p>This tool is in development and NREL will add materials and results over time.</p>
+
+
+
+<!-- CONTROLS -->
+<table class="data controls">
+  <tbody>
+    <tr class="grey">
+        <th>
+    <label for="material_type">Meter</label>
+    <div id="materialClassDiv">
+            <select id="material_type">
+                <option value="0">Rheonik</option>
+                <option value="1">Tatsuno</option>
+                <option value="2">Hoffer</option>
+            </select>
+        </div>
+    </th>
+
+      <th>
+    <label for="chemDescription">Flow</label>
+    <div id="chemDescriptionDiv">
+      <select id="chemDescription">
+        <option value="0">Not Specified</option>
+        <option value="1">High</option>
+        <option value="2">Medium</option>
+        <option value="3">Low</option>
+ <!-- Not necessary       <option value="4">Urethanes</option> -->
+      </select>
+    </div>
+    </th>
+
+      <th>
+    <label for="manufacturer">Ramp</label>
+    <div id="manufacturerDiv">
+      <select id="manufacturer">
+        <option value="0">Not Specified</option>
+        <option value="1">High</option>
+        <option value="2">Medium</option>
+        <option value="3">Low</option>
+      </select>
+    </div>
+    </th>
+
+      <th>
+    <label for="tradeName">Pressure</label>
+    <div id="tradeNameDiv">
+      <select id="tradeName">
+        <option value="0">Not Specified</option>
+        <option value="1">High</option>
+        <option value="2">Low</option>
+ <!--       <option value="3">Bond-IT 2-part Adhesive</option>-->
+      </select>
+    </div>
+    </th>
+
+      <th><label for="grade">Position</label>
+    <div id="gradeDiv">
+      <select id="grade">
+        <option value="0">Not Specified</option>
+        <option value="1">P1</option>
+        <option value="2">P2</option>
+ <!--       <option value="3">B45TH</option>-->
+      </select>
+    </div>
+    </th>
+
+     </tr>
+    </tbody>
+</table>
+
+<!-- GRAPHS -->
+<table class="data graphs">
+<tbody>
+<!-- <tr>
+  <td>
+    <h2>Top graph</h2>
+    <div id="chart_div1" style="position: relative;"></div>
+    <div class="hide">
+      <p>Graph on top explanation</p>
+    </div>
+  </td>
+</tr> -->
+<tr>
+  <td>
+    <h2>STE</h2>
+    <div id="chart_div1" style="position: relative;"></div>
+    <div class="hide">
+      <p>Graph of STE</p>
+    </div>
+  </td>
+  <td>
+    <h2>SFE</h2>
+    <div id="chart_div2" style="position: relative;"></div>
+
+    <div class="hide">
+      <p>Graph of SFE </p>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <h2>VCE</h2>
+    <div id="chart-ic" style="position: relative;"></div>
+    <div class="hide">
+        <p>Graph of VCE </p>
+    </div>
+  </td>
+  <td>
+    <h2>PPE</h2>
+    <div id="chart-icp" style="position: relative;"></div>
+    <p class="caption">29 elements were analyzed using ICP-OES</p>
+    <div class="hide">
+        <p>Graph of PPE</p>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>
+    <h2>Delta P</h2>
+
+    <div id="insitu">
+
+    <div class="hide">
+        <p>Graph of Delta P </p>
+    </div>
+  </td>
+  <td>
+    <div id="chart_div4">
+      <table class="noborders">
+        <tbody>
+        <tr>
+          <td>
+          <div id="tableHeader">
+            <h2>Delta T</h2>
+            <p>Total number of peaks detected: 15+<br />
+                Weeks soaked: 6 weeks for structural materials, 1 week for assembly aids</p>
+          </div>
+          </td>
+        </tr>
+        <tr><td><div id="table1">2-Propenoic acid, 2-methyl-, 2-hydroxyethyl ester</div></td></tr>
+        <tr><td><div id="table2">1,2-Ethanediol</div></td></tr>
+        <tr><td><div id="table3">2-Oxepanone</div></td></tr>
+        <tr><td><div id="table4">Benzoic acid</div></td></tr>
+        <tr><td><div id="table5"></div></td></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="caption">
+      <p class="nobottom">Notes:  </p>
+      <ol>
+      <li>Liquid injection GCMS method</li>
+      <li>Samples analyzed as leached</li>
+      <li>Only high quality hits with NIST spectral library reported</li>
+      <li>Results reported for structural materials came from LCMS and GCMS</li>
+      </ol>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <h2>Time To Stop</h2>
+    <div id="chart-leaching" style="position: relative;"></div>
+    <div class="hide">
+      <p>Graph of Time To Stop</p>
+    </div>
+  </td>
+  <td>
+    <h2>Pulse</h2>
+    <div id="chart-voltage" style="position: relative;"></div>
+    <div class="hide">
+      <p>Graph of the Pulse </p>
+    </div>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+
+<!--FINISH EDIT (do NOT change anything BELOW this line) -->
+
+<!-- EXCLUDE FOR PRINTABLE VERSION BOTTOM START -->
+
+              <div id="printable-bottom"><!--stopindex-->
+
+<img src="http://www.nrel.gov/images/icon_print.gif" width="14" height="10" alt="" /> <a href="http://www.nrel.gov/hydrogen/system_contaminants_data/index.html?print">Printable Version</a>
+
+<!--startindex--></div>
+            </div>
+            <!--CENTER COLUMN END -->
+
+            <!--LEFT COLUMN START -->
+            <!--<div id="column-left"> -->
+                <!-- # i n c l u d e virtual="/hydrogen/includes/leftnav.html" -->
+            <!--</div>  -->
+            <!--LEFT COLUMN END -->
+        <!--</div> -->
+        <!--C0NTENT END -->
+
+<!-- EXCLUDE FOR PRINTABLE VERSION BOTTOM END -->
+<br clear="all" />
+
+
+<script src="http://www.nrel.gov/includes/feedback/nrel.feedback.jquery.js" type="text/javascript"></script>
+
+
+<div id="feedback-container">
+<div id="feedback">
+
+
+
+  <!-- 1st Form -->
+  <div id="feedback-primary" class="feedback-panel">
+
+    <p>Did you find what you needed?</p>
+    <form action="" class="feedback-form" name="feedback-primary-form" id="feedback-primary-form" method="post">
+
+
+      <label for="yes" class="hide">Yes</label>
+      <input type="button"  value="1" name="yes_no" id="yes" class="feedback-button-yes button-submit" />
+
+      <label for="no"  class="hide" >No</label>
+      <input type="button"  value="0"  name="yes_no" id="no"  class="feedback-button-no  button-submit" />
+
+
+      <input type="hidden" name="formName"   id="formName"   value="" />
+      <input type="hidden" name="url"        id="url"        value="" />
+      <input type="hidden" name="buttonType" id="buttonType" value="" />
+    </form>
+  </div>
+
+
+  <!-- 2nd Form -->
+  <div id="feedback-secondary" class="feedback-panel hide">
+    <form action="" class="feedback-form" name="feedback-secondary-form" id="feedback-secondary-form" method="post">
+
+      <h3>Thank you for your feedback.</h3>
+
+      <label for="improvement" >Would you like to take a moment to tell us how we can improve this page?</label>
+      <textarea cols="20" rows="4" name="improvement" id="improvement"></textarea>
+
+      <input type="submit" name="submit"   id="submit"   value="Submit" class="button-submit" />
+      <input type="hidden" name="recordID" id="recordID" value="" />
+    </form>
+  </div>
+
+
+  <!-- Thank you -->
+  <div id="feedback-success" class="feedback-panel hide">
+    <h3>We value your feedback.</h3>
+    <p>Thanks! We've received your feedback.</p>
+  </div>
+
+
+  <!-- Oops -->
+  <div id="feedback-fail" class="feedback-panel hide">
+    <h3>Something went wrong.</h3>
+    <p>Please try again later.</p>
+  </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<!--stopindex-->
+
+<div id="footer">
+
+
+
+
+<div><img src="http://www.nrel.gov/images/foot_nrelis.gif" alt="NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC." usemap="#footer_map" /></div>
+
+
+<map name="footer_map" id="footer_map">
+  
+  <area shape="rect" coords="27,7,61,20" href="http://www.nrel.gov/" alt="NREL" />
+  <area shape="rect" coords="238,7,399,19"  href="http://energy.gov/" alt="U.S. Department of Energy" />
+  <area shape="rect" coords="405,7,697,21"  href="http://energy.gov/eere/office-energy-efficiency-renewable-energy" alt="Office of Energy Efficiency and Renewable Energy" />
+  <area shape="rect" coords="307,21,524,35" href="http://www.allianceforsustainableenergy.org/" alt="Alliance for Sustainable Energy, LLC" />
+  
+</map>
+
+
+<p class="date">Content Last Updated:  June 16, 2014</p>
+
+
+<p>
+<a href="http://www.nrel.gov/hydrogen/webmaster.html">Need Help?</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://www.nrel.gov/security.html">Security &amp; Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://www.nrel.gov/disclaimer.html">Disclaimer</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://www.nrel.gov/">NREL Home</a>
+
+</p>
+
+
+
+<br />
+</div>
+<!--startindex-->
+
+<!--CLOSES THE print_page DIV -->
+
+
+<!--CrazyEgg -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"http://dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5883.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+</div>
+</body>
+</html>
+
