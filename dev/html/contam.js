@@ -14,6 +14,7 @@ $(document).ready(function() {
 
 
     // Lots of global variables. Use carefully...
+	// These are the charts
     var testchart, ICchart, ICPchart, Voltagechart, Leachingchart,
         chart1,
         chart2;
@@ -38,16 +39,6 @@ $(document).ready(function() {
         , italic: false
     };
 
-	
-	//<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>check
-	//<script type="text/javascript">
-	//google.charts.load('current', {'packages':['corechart']});
-	//google.charts.setOnLoadCallback(drawChart); check
-	
-	
-	
-	
-	
 	
 
     google.load("visualization", "1", { packages:"corechart", callback: main });
@@ -250,10 +241,11 @@ $(document).ready(function() {
 
         var drawAllCharts = function() {
             var leachingorder;  // the order of the columns in the Leaching chart
-
+			
+			drawTestChart();	
             drawChart1();
             drawChart2();
-			drawTestChart();
+			
             addTable();
 
             drawICchart();
@@ -381,7 +373,7 @@ $(document).ready(function() {
 				lineWidth: 4,
 				intervals: { 'style':'boxes' },
 				legend: 'none'
-			};
+			
 			testchart.draw(dataTable, options);
         };
 		
