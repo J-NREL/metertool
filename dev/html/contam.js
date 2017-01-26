@@ -335,15 +335,11 @@ $(document).ready(function() {
 
         };
 
-		/* draw test chart
+		/* draw test chart  
 		* Box interval graph
 		*
 		*/
-		
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		<script type="text/javascript">
-		google.charts.load('current', {'packages':['corechart']});
-		google.charts.setOnLoadCallback(drawChart);
+
 
 		function drawTestChart() {
 			var data = new google.visualization.DataTable();
@@ -374,7 +370,7 @@ $(document).ready(function() {
 				intervals: { 'style':'boxes' },
 				legend: 'none'
 			
-			testchart.draw(dataTable, options);
+			testchart.draw(data, options);
         };
 		
 
